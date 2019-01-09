@@ -1,5 +1,3 @@
-<p align="center"><a href="https://craftcms.com/" target="_blank"><img width="312" height="90" src="https://craftcms.com/craftcms.svg" alt="Craft CMS"></a></p>
-
 A Craft CMS project with Laravel Mix and Tailwind CSS.
 
 - [Craft CMS 3](https://www.craftcms.com)
@@ -11,6 +9,10 @@ A Craft CMS project with Laravel Mix and Tailwind CSS.
 $ composer create-project craftbyexample/craft-mix-tailwind <Path>
 $ npm install
 ```
+
+<hr>
+
+<p align="center"><a href="https://craftcms.com/" target="_blank"><img width="312" height="90" src="https://craftcms.com/craftcms.svg" alt="Craft CMS"></a></p>
 
 ## About Craft CMS
 
