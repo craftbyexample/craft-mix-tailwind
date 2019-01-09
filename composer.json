@@ -1,6 +1,6 @@
 {
   "name": "craftbyexample/craft-mix-tailwind",
-  "description": "Craft CMS Starter project with Laravel Mix and TailwindCSS",
+  "description": "A Craft CMS project with Laravel Mix and Tailwind CSS",
   "keywords": [
     "craft",
     "cms",
