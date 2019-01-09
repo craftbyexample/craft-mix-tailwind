@@ -28,6 +28,7 @@ mix
     .postCss('src/css/app.css', 'web/resources/', [
         tailwindcss('./tailwind.js'),
     ])
+    .version()
     .setPublicPath('web/resources/');
 
 // Only run PurgeCSS during production builds for faster development builds

@@ -1,0 +1,16 @@
+{% set docTitle = docTitle is defined ? docTitle : title|striptags %}
+<!doctype html>
+<html lang="{{ currentSite.language }}">
+<head>
+    {% block head %}
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>{{ docTitle }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url(rev('resources/app.css')) }}" media="screen">
+    {% endblock %}
+</head>
+<body>
+    {% block body %}{% endblock %}
+</body>
+</html>

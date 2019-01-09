@@ -5,6 +5,7 @@ A Craft CMS project with Laravel Mix and Tailwind CSS.
 - [Craft CMS 3](https://www.craftcms.com)
 - [Laravel Mix 4](https://github.com/JeffreyWay/laravel-mix)
 - [Tailwind CSS](https://tailwindcss.com/)
+- [CraftCMS Asset Rev](https://github.com/clubstudioltd/craft-asset-rev)
 
 ```
 $ composer create-project craftbyexample/craft-mix-tailwind <Path>
