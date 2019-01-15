@@ -1,9 +1,9 @@
-let mix = require('laravel-mix');
-let tailwindcss = require('tailwindcss');
-let glob = require('glob-all');
-let LaravelMixFilenameVersioning = require('laravel-mix-filename-versioning');
-let PurgecssPlugin = require('purgecss-webpack-plugin');
-
+const mix = require('laravel-mix');
+const tailwindcss = require('tailwindcss');
+const glob = require('glob-all');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const LaravelMixFilenameVersioning = require('laravel-mix-filename-versioning');
+const PurgecssPlugin = require('purgecss-webpack-plugin');
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -29,14 +29,20 @@ mix
     .postCss('src/css/app.css', 'web/resources/', [
         tailwindcss('./tailwind.js'),
     ])
-    .version()
+    .webpackConfig({
+        plugins: [
+            new CleanWebpackPlugin(['web/resources'])
+        ]
+    })
     .setPublicPath('web/resources/');
 
 // Only run PurgeCSS during production builds for faster development builds
 // and so you still have the full set of utilities available during
 // development.
 if (mix.inProduction()) {
-    mix.webpackConfig({
+    mix
+        .version()
+        .webpackConfig({
         plugins: [
             new PurgecssPlugin({
                 // Specify the locations of any files you want to scan for class names.
