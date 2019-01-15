@@ -3,6 +3,7 @@ const tailwindcss = require('tailwindcss');
 const glob = require('glob-all');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const LaravelMixFilenameVersioning = require('laravel-mix-filename-versioning');
+const postcssPresetEnv = require('postcss-preset-env');
 const PurgecssPlugin = require('purgecss-webpack-plugin');
 /*
  |--------------------------------------------------------------------------
@@ -28,6 +29,7 @@ class TailwindExtractor {
 mix
     .postCss('src/css/app.css', 'web/resources/', [
         tailwindcss('./tailwind.js'),
+        postcssPresetEnv(),
     ])
     .webpackConfig({
         plugins: [

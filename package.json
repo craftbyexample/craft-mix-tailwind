@@ -9,6 +9,7 @@
     "glob-all": "^3.1.0",
     "laravel-mix": "^4.0.13",
     "laravel-mix-filename-versioning": "^1.0.4",
+    "postcss-preset-env": "^6.5.0",
     "purgecss-webpack-plugin": "^1.4.0",
     "tailwindcss": "^0.7.3",
     "vue-template-compiler": "^2.5.21"
