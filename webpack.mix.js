@@ -1,6 +1,7 @@
 let mix = require('laravel-mix');
 let tailwindcss = require('tailwindcss');
 let glob = require('glob-all');
+let LaravelMixFilenameVersioning = require('laravel-mix-filename-versioning');
 let PurgecssPlugin = require('purgecss-webpack-plugin');
 
 /*
@@ -51,7 +52,8 @@ if (mix.inProduction()) {
                         extensions: ["html", "js", "php", "twig", "vue"]
                     }
                 ]
-            })
+            }),
+            new LaravelMixFilenameVersioning
         ]
     });
 }
