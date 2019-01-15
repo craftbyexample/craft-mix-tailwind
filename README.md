@@ -7,6 +7,7 @@ A Craft CMS project with Laravel Mix and Tailwind CSS.
 
 ```
 $ composer create-project craftbyexample/craft-mix-tailwind <Path>
+$ ./craft setup
 $ npm install
 ```
 

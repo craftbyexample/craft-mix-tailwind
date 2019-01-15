@@ -10,8 +10,8 @@
     "tailwindcss",
     "tailwind"
   ],
-  "license": "MIT",
-  "homepage": "https://www.craftbyexample.com/",
+  "license": "Unlicense",
+  "homepage": "https://www.github.com/craftbyexample/craft-mix-tailwind",
   "type": "project",
   "support": {
     "email": "support@craftcms.com",
