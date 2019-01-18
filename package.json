@@ -1,6 +1,5 @@
 {
   "name": "craft-mix-tailwind",
-  "version": "0.1.0",
   "description": "A Craft CMS project with Laravel Mix and Tailwind CSS",
   "dependencies": {},
   "devDependencies": {
@@ -23,5 +22,5 @@
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "author": "",
-  "license": "MIT"
+  "license": "Unlicense"
 }
